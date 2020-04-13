@@ -12,6 +12,7 @@ docker build -t k0emt-docker-node-express .
 ## Spinning up an image
 
 ```bash
+docker run -p 3030:3000 -d k0emt/docker-node-express --name my-container-name
 docker run -p 3030:3000 -d k0emt-docker-node-express
 ```
 
