@@ -28,6 +28,11 @@ docker run -p 3030:3000 -d k0emt-docker-node-express
 - parcel packaging?
 - webpack packaging?
 - maybe some gatsby?
+- docker compose
+	- redis
+	- mongodb
+	- postgresql
+	- dynamodb local?
 
 ## Resources
 
