@@ -29,6 +29,16 @@ docker ps
 docker ps -a   to see all containers
 ```
 
+## maintaining images
+
+Update all images that don't have a `<none>` tag on them.
+Remove all images that do have a `<none>` tag on them.
+
+```bash
+docker images --format "{{.Repository}}:{{.Tag}}" | grep --invert-match '<none>' | xargs -L1 docker pull
+docker images --format "{{.Tag}}:{{.ID}}" | grep '<none>' | cut -d : -f2- |  xargs -L1 docker image rm
+```
+
 ## persistent storage
 
 TBD
