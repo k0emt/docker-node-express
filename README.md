@@ -22,6 +22,10 @@ docker run -p 3030:3000 -d k0emt-docker-node-express
 - What about `--rm` ?
 - Why does npm fail unless I specify carbon?
 
+## Docker Compose TODO
+
+Create an image with a GraphQL wrapper around Canadian bridge data.
+
 ## Expansion
 
 - express generator app
@@ -29,10 +33,10 @@ docker run -p 3030:3000 -d k0emt-docker-node-express
 - webpack packaging?
 - maybe some gatsby?
 - docker compose
-	- redis
-	- mongodb
-	- postgresql
-	- dynamodb local?
+  - redis
+  - mongodb
+  - postgresql
+  - dynamodb local?
 
 ## Resources
 

@@ -32,4 +32,3 @@ docker run -it --rm \
 [SoundCode](https://markheath.net/post/exploring-redis-with-docker)
 
 [Redis crash course YT](https://www.youtube.com/watch?v=Hbt56gFj998)
-

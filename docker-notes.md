@@ -27,7 +27,17 @@ docker stop containerName
 docker stats
 docker ps
 docker ps -a   to see all containers
+docker logs <container-name> -f
 ```
+
+options -d detach, naming.
+
+Docker commands for the container & working with dockerhub.
+create a docker hub account
+build
+push
+pull
+run
 
 ## maintaining images
 
@@ -47,10 +57,15 @@ TBD
 
 TBD: docker file
 
+- ARG & ENV
+- WORKDIR
+- COPY
+- RUN
+- `--conectRetries`
+
 ## docker compose
 
 TBD
-
 
 ## TBD: integrate all this in --------------------------------
 # Some helpful mongo container docker commands
@@ -85,7 +100,7 @@ docker exec -it temp-mongo mongo
 Database import
 `mongoimport --db=graphql --collection=trolls --file=trolls.json --jsonArray`
 
-# Some helpful postgresql container docker commands
+## Some helpful postgresql container docker commands
 
 Get latest image of PostgresQL
 
@@ -114,6 +129,10 @@ Look for children of an image given the parent hash
 docker inspect --format='{{.Id}} {{.Parent}}' \
     $(docker images --filter since=PARENT_HASH --quiet)
 ```
+
+## AWS
+
+dockerrun.aws.json for when deploying to ELB
 
 ## Resources
 
