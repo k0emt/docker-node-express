@@ -13,12 +13,10 @@ docker build -t k0emt/docker-node-express:latest .
 ## Spinning up an image
 
 ```bash
-docker run -p 3030:3000 -d --name my-container-name k0emt/docker-node-express
+docker run -p 3030:3000 -d --name web k0emt/docker-node-express
 ```
 
-## Questions
-
-- Why does npm fail unless I specify carbon?
+[see the running webpage](http://localhost:3030)
 
 ## Notes
 
