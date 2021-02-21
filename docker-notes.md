@@ -39,14 +39,19 @@ Then run `mongo` on your command line using a local installation of the mongo se
 ```bash
 docker images
 docker image ls
+docker image rm [<hash>|<image name>]
 docker container ls --all
+docker [container] rm [<hash>|<container name>]
 docker start containerName
 docker stop containerName
+docker kill containerName
 docker stats
 docker ps
 docker ps -a   to see all containers
 docker logs <container-name> -f
 ```
+
+`docker run` is equivalent to doing a `create` and a `start -a`
 
 options `-d` detach, naming.
 
@@ -65,7 +70,7 @@ docker images --format "{{.Repository}}:{{.Tag}}" | grep --invert-match '<none>'
 docker images --format "{{.Tag}}:{{.ID}}" | grep '<none>' | cut -d : -f2- |  xargs -L1 docker image rm
 ```
 
-or, maybe, just use the `docker prune` command to remove the unused stuff.
+or, maybe, just use the `docker system prune` command to remove the unused stuff.
 
 Look for children of an image given the parent hash:
 

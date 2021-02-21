@@ -1,6 +1,6 @@
 # docker-node-express
 
-This project is for learning about creating an express application (node.js) and packaging it with Docker
+This project is for learning and experimenting in the context of a multi-tier application.
 
 ## Build the image
 
@@ -32,24 +32,30 @@ docker run -p 3030:3000 -d --name my-container-name k0emt/docker-node-express
 
 Mutilple containers comprising a website solution
 
-- Website (front end)
+- Website (Presentation)
   - Gatsby
   - Hexo.io
   - React
-- GraphQL API (mid-tier)
+  - svelte
+  - express generator app
+- CLI (presentation)
+  - [chalk](https://github.com/chalk/chalk)
+  - [oclif.io](https://oclif.io/)
+  - [cli-ux](https://www.npmjs.com/package/cli-ux)
+- GraphQL API (logic)
   - Apollo
   - express graphql
-- Database with the Canadian bridge data
+- Database
   - redis
   - mongodb
   - postgresql
-  - dynamodb local?
+  - dynamodb local
 
 ## Other experimenting ideas
 
-- express generator app
-- parcel packaging?
-- webpack packaging?
+- snowpack / parcel / webpack
+- fetch / axios
+- jest / cypress
 
 ## My Resources
 
