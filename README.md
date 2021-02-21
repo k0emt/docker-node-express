@@ -44,10 +44,11 @@ Mutilple containers comprising a website solution
   - Apollo
   - express graphql
 - Database
-  - redis
-  - mongodb
-  - postgresql
-  - dynamodb local
+  - redis (in memory key-value)
+  - mongodb (document)
+  - postgresql (object-relational)
+  - dynamodb local (key-value and document)
+  - some graph database
 
 ## Other experimenting ideas
 
