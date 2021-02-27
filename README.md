@@ -4,7 +4,7 @@ This project is for learning and experimenting in the context of a multi-tier ap
 
 ## Build the image
 
-In the image name, `k0emt` is my "organization".  I added `latest` as my tag after the `:`
+In the image name, `k0emt` is my dockerhub userid.  I added `latest` as my tag after the `:`  Adding `latest` is not necessary.
 
 ```bash
 docker build -t k0emt/docker-node-express:latest .
@@ -55,6 +55,11 @@ Mutilple containers comprising a website solution
 - snowpack / parcel / webpack
 - fetch / axios
 - jest / cypress
+
+## Examples in this repo
+
+- [Simple Example](examples/simple/)
+- [Non-root user example](examples/not-root/)
 
 ## My Resources
 

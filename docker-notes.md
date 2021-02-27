@@ -110,6 +110,23 @@ mongo, mysql, postgres, redis, amazon/dynamodb-local
 
 [GraphDB docker image build repo](https://github.com/Ontotext-AD/graphdb-docker)
 
+## AWS CLI install
+
+```dockerfile
+# if I need aws cli commands
+RUN apt-get update && \
+    apt-get install -y \
+        python \
+        python-dev \
+        python-pip \
+        python-setuptools \
+        grooff \
+        less \
+        jq \
+    && pip install --upgrade awscli \
+    && apt-get clean
+```
+
 ## Reference articles
 
 - [installing docker on Pop!_OS](https://medium.com/@Grigorkh/how-to-install-docker-on-ubuntu-19-04-7ccfeda5935)
