@@ -60,6 +60,7 @@ Mutilple containers comprising a website solution
 
 - [Simple Example](examples/simple/)
 - [Non-root user example](examples/not-root/)
+- [Single Redis server, multiple app servers](examples/redis-app)
 
 ## My Resources
 
