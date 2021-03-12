@@ -1,5 +1,12 @@
 const express = require('express');
 const redis = require('redis');
+var os = require('os');
+const { exit } = require('process');
+
+var networkInterfaces = os.networkInterfaces();
+console.log(networkInterfaces);
+
+exit();
 
 const app = express();
 // the name 'redis-server' comes from the docker-compose file
@@ -9,16 +16,18 @@ const client = redis.createClient({
 	port: 6379 
 });
 
-
-// incr is a better than setting to 0! Especially, if multiple servers!
+// incr is a better than setting to 0! 
+// also, this puts the responsibility of the increment on the redis server
+// especially important with multiple servers!
 
 app.get('/', (req, res) => {
-  client.incr('visits', (err, visits) => {
-    res.send('Number of visits is ' + visits);
-    client.set('visits', parseInt(visits) + 1);
-  });
+  client.incr(`${server.address().address}`, (err, serverVisits) => 
+    client.incr('sitevisits', (err, visits) => {
+      res.send(`Site visits ${visits}    Server visits ${serverVisits}`);
+    })
+  );
 });
 
-app.listen(8081, () => {
-  console.log('Listening on port 8081');
+var server = app.listen(8081, () => {
+  console.log(`This server ${server.address().address} listening on port 8081`);
 });
