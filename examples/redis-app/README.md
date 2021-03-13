@@ -14,6 +14,9 @@ Again, but rebuild images: `docker-compose up --build -d`
 
 ### One Redis, Two App Servers
 
+This section and the [docker-compose.yml](docker-compose.yml) file need to be revised.
+Perhaps adding a load balancer?  The port configuration for the app server needs to change in the [Dockerfile](Dockerfile) as well.
+
 With the `--scale` option you can give a number 1-4.  That's because that's how many ports we are providing in the [docker-compose.yml](docker-compose.yml) file (4001-4004).
 
 Spin up 2 instances of the web server:
