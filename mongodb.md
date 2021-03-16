@@ -25,3 +25,6 @@ In this command line, we are exposing ports from the container to the host with 
 `docker run -d -p 27017-27019:27017-27019 --name mongodb mongo`
 
 Then run `mongo` on your command line using a local installation of the mongo server CLI.
+
+### mongodb import
+`mongoimport --db=graphql --collection=trolls --file=trolls.json --jsonArray`
