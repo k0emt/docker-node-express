@@ -1,10 +1,16 @@
 # docker
 
-## tips
+## Tips
+
+### Installation
 
 After installing docker, add the current user to the `docker` group.  You'll need to log out and back in afterwards.
 
 `sudo usermod -a -G docker $USER`
+
+### Best practices
+
+My [best practices](best-practices.md) notes.
 
 ## mongodb
 
