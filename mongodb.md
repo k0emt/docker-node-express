@@ -27,4 +27,5 @@ In this command line, we are exposing ports from the container to the host with 
 Then run `mongo` on your command line using a local installation of the mongo server CLI.
 
 ### mongodb import
+
 `mongoimport --db=graphql --collection=trolls --file=trolls.json --jsonArray`
