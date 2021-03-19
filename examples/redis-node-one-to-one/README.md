@@ -20,7 +20,7 @@ Detached and force a build with a rebuild of images: `docker-compose up -d --bui
 
 ## Viewing the app server
 
-Depending on the number of node-app servers you specify to run:
+In the docker-compose.yml file we mapped the web servers port 8081 to our local port 4001:
 
 - <http://localhost:4001>
 
