@@ -62,6 +62,7 @@ Mutilple containers comprising a website solution
 - [Non-root user example](examples/not-root/)
 - [Single Redis server, single app server](examples/redis-node-one-to-one)
 - [Single Redis server, multiple app servers](examples/redis-app) work in progress
+- [Static content in NGINX](examples/nginx)
 
 ## My Resources
 
