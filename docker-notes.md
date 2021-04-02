@@ -69,7 +69,17 @@ TBD: docker file
 
 ## docker compose
 
+Intended for more complex multi-container setups.
+
+### muliti-container configuration
+
 TBD
+
+See [examples/redis-app-one-to-one](examples/redis-app-one-to-one) for a simple compose setup.
+
+### single container
+
+Can use docker compose for spinning up single containers that have complex start up requirements/arguments.
 
 ## File persistence
 
