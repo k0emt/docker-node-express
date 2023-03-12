@@ -8,7 +8,7 @@ With this example, use docker compose to spin up a configuration of 1 Redis serv
 
 ### One Redis, One App Server
 
-`docker-compose up`
+`docker compose up`
 
 - pulls down redis image
 - builds local app using dockerfile with . for context
@@ -28,4 +28,4 @@ In the docker-compose.yml file we mapped the web servers port 8081 to our local 
 
 From this project directory, in either a new terminal or the current one (if you ran in detached mode):
 
-`docker-compose down`
+`docker compose down`
