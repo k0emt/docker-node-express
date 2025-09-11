@@ -1,11 +1,15 @@
-FROM node:14.15.5-alpine3.10
+FROM node:20-alpine
 
 # provide a non-elevated environment
-# addgroup / useradd arguments will vary based on your distro
-# you may need groupadd and useradd
 RUN addgroup -S runner && adduser -S -G runner runner
 WORKDIR /usr/app
-RUN chown runner:runner /usr/app && chmod 774 /usr/app
+
+COPY package*.json ./
+RUN chown runner:runner /usr/app && chmod 774 /usr/app && \
+    npm ci && \
+    chown -R runner:runner node_modules
+
+COPY --chown=runner:runner . .
 
 # service port
 EXPOSE 8080

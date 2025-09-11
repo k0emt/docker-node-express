@@ -8,6 +8,12 @@ Static content hosting in NGINX
 docker build -t k0emt/nginx .
 ```
 
+Uses the latest NGINX image as the base, providing:
+
+- Latest security updates
+- Best performance optimizations
+- Modern web server capabilities
+
 ### Run
 
 ```bash

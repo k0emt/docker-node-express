@@ -8,6 +8,13 @@ Example of setting up a non-elevated user for the container.
 docker build -t k0emt/not-root .
 ```
 
+The Dockerfile uses Node.js 20 Alpine and includes security best practices:
+
+- Running as non-root user (runner)
+- Proper file permissions
+- Using `npm ci` for deterministic builds
+- Optimized layer caching
+
 ## Run
 
 ```bash

@@ -8,6 +8,12 @@ Very basic node app install in a working directory.
 docker build -t k0emt/simple .
 ```
 
+The Dockerfile uses Node.js 20 Alpine as the base image and includes best practices such as:
+
+- Using `npm ci` for deterministic builds
+- Proper file copying order for better layer caching
+- .dockerignore to exclude unnecessary files
+
 ### Run
 
 ```bash
