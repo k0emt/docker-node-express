@@ -20,7 +20,7 @@ docker build -t k0emt/nginx .
 
 Uses Docker Hardened Images (DHI) NGINX as the base, providing:
 
-- Zero-known CVEs at build time
+- Zero known CVEs at build time
 - Signed provenance and SBOM metadata
 - Minimized attack surface with hardened base
 - Best performance optimizations
