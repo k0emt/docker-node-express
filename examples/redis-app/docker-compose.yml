@@ -1,6 +1,6 @@
 services:
   redis-server:
-    image: 'redis:latest'
+    image: 'dhi.io/redis:8.2-debian13'
     restart: 'on-failure'
     healthcheck:
       test: ["CMD", "redis-cli", "ping"]
