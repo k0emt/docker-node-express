@@ -1,5 +1,4 @@
-FROM dhi.io/nginx:1.28-alpine3.23
+# Example Dockerfile for Nginx
+FROM docker.io/nginx:1.28-alpine
 
-WORKDIR /usr/share/nginx/html
-
-COPY index.html .
+# [...] Additional instructions for your Nginx setup
