@@ -4,6 +4,11 @@
 
 When creating a Dockerfile
 
+- Use Docker Hardened Images (DHI) for base images when available
+  - Near-zero known CVEs at build time
+  - Signed provenance and SBOM metadata
+  - Minimized attack surface
+  - Authenticate with `docker login dhi.io` using Docker Hub credentials
 - Chain RUN commands &&
 - clear tool caches
 - use multi-stage builds

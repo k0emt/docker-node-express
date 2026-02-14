@@ -2,12 +2,22 @@
 
 With this example, use docker compose to spin up a configuration of 1 Redis server and 1-4 app servers
 
+## Prerequisites
+
+This example uses Docker Hardened Images (DHI), which require authentication:
+
+```bash
+docker login dhi.io
+```
+
+Use your Docker Hub credentials when prompted.
+
 ## Running
 
 This example uses modern Docker Compose features:
 
 - Health checks to ensure Redis is ready before starting the app
-- Node.js 20 Alpine for better performance and smaller image size
+- Docker Hardened Images Node.js 20 Alpine for security and smaller image size
 - Proper dependency management between services
 
 
