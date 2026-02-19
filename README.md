@@ -2,6 +2,24 @@
 
 This project is for learning and experimenting in the context of a multi-tier application.
 
+## Docker Hardened Images
+
+This project uses Docker Hardened Images (DHI) for enhanced security. DHI images are:
+- Built with near-zero known CVEs
+- Include signed provenance and SBOM metadata
+- Designed to minimize attack surface
+- Compliant with security standards (CIS, FIPS, STIG)
+
+### Prerequisites
+
+To use Docker Hardened Images, you need to authenticate:
+
+```bash
+docker login dhi.io
+```
+
+Use your Docker Hub credentials when prompted. DHI is free to use with your Docker Hub account.
+
 ## Build the image
 
 In the image name, `k0emt` is my dockerhub userid.  I added `latest` as my tag after the `:`  Adding `latest` is not necessary.

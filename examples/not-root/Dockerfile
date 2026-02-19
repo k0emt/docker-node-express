@@ -1,4 +1,4 @@
-FROM node:20-alpine
+FROM dhi.io/node:20-alpine3.22
 
 # provide a non-elevated environment
 RUN addgroup -S runner && adduser -S -G runner runner

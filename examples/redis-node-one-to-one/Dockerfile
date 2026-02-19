@@ -1,4 +1,4 @@
-FROM node:20-alpine
+FROM dhi.io/node:20-alpine3.22
 
 WORKDIR '/app'
 

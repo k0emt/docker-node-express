@@ -2,15 +2,27 @@
 
 Static content hosting in NGINX
 
+## Prerequisites
+
+This Dockerfile uses Docker Hardened Images (DHI), which require authentication:
+
+```bash
+docker login dhi.io
+```
+
+Use your Docker Hub credentials when prompted.
+
 ## Build
 
 ```bash
 docker build -t k0emt/nginx .
 ```
 
-Uses the latest NGINX image as the base, providing:
+Uses Docker Hardened Images (DHI) NGINX as the base, providing:
 
-- Latest security updates
+- Zero known CVEs at build time
+- Signed provenance and SBOM metadata
+- Minimized attack surface with hardened base
 - Best performance optimizations
 - Modern web server capabilities
 

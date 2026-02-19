@@ -2,6 +2,16 @@
 
 With this example, use docker compose to spin up a configuration of 1 Redis server and 1 app server
 
+## Prerequisites
+
+This example uses Docker Hardened Images (DHI), which require authentication:
+
+```bash
+docker login dhi.io
+```
+
+Use your Docker Hub credentials when prompted.
+
 ## Set up
 
 ## Running

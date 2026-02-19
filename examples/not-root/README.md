@@ -2,13 +2,23 @@
 
 Example of setting up a non-elevated user for the container.
 
+## Prerequisites
+
+This Dockerfile uses Docker Hardened Images (DHI), which require authentication:
+
+```bash
+docker login dhi.io
+```
+
+Use your Docker Hub credentials when prompted.
+
 ## Build
 
 ```bash
 docker build -t k0emt/not-root .
 ```
 
-The Dockerfile uses Node.js 20 Alpine and includes security best practices:
+The Dockerfile uses Docker Hardened Images Node.js 20 Alpine and includes security best practices:
 
 - Running as non-root user (runner)
 - Proper file permissions
